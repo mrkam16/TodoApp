@@ -67,5 +67,11 @@ namespace TodoApp.Services
                 throw;
             }
         }
+
+	public void ClearList()
+        {
+            File.WriteAllText(path, String.Empty);
+        }
+	
     }
 }
